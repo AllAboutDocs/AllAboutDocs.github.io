@@ -34,6 +34,24 @@ include:
   - assets
 
 # Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Plugins (GitHub Pages safe)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 6
+paginate_path: "/page:num"
+
+# Aviator Collections (optional sections)
 collections:
   docs-creation-and-management-apis:
     output: true
@@ -41,26 +59,46 @@ collections:
   docs-update-via-lists-apis:
     output: true
     position_number: 2
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
 
 defaults:
   - scope:
       path: ""
-      type: "docs-creation-and-management-apis"
+      type: "getting-started"
     values:
       layout: "default"
       section: "docs"
   - scope:
       path: ""
-      type: "docs-update-via-lists-apis"
+      type: "features"
+    values:
+      layout: "default"
+      section: "docs"
+  - scope:
+      path: ""
+      type: "api"
     values:
       layout: "default"
       section: "docs"
 
+# Include Your Existing Markdown Docs Folder
+# ======================================================
+include:
+  - docs-updates-via-lists
+
+defaults:
+  - scope:
+      path: "docs-updates-via-lists"
+      type: "pages"
+    values:
+      layout: "default"
+      section: "docs"
+      title: "Docs Updates"
+
+# Theme + Layout
+# ======================================================
+theme: null        # disable Minima or remote theme
+collections_dir: . # ensure collections are at top level
+timezone: "UTC"
 # ======================================================
 #  Aviator Theme Options (adjust as needed)
 # ======================================================
