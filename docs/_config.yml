@@ -35,8 +35,12 @@ include:
 
 # Build settings
 collections:
-  posts:
+  docs-creation-and-management-apis:
     output: true
+    position_number: 1
+  docs-update-via-lists-apis:
+    output: true
+    position_number: 2
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -46,15 +50,16 @@ plugins:
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: "docs-creation-and-management-apis"
     values:
-      layout: "post"
-      author: "All About Docs Team"
+      layout: "default"
+      section: "docs"
   - scope:
       path: ""
-      type: "docs"
+      type: "docs-update-via-lists-apis"
     values:
-      layout: "page"
+      layout: "default"
+      section: "docs"
 
 # ======================================================
 #  Aviator Theme Options (adjust as needed)
