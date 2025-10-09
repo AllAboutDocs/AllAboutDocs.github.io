@@ -1,6 +1,13 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: "All About Docs"
 ---
+
+# Welcome to All About Docs
+
+If you can see this, your Aviator theme is working! 🎉
+
+{% for page in site.pages %}
+
+- [{{ page.title | default: page.name }}]({{ page.url | relative_url }})
+  {% endfor %}
