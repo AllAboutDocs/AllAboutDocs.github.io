@@ -10,6 +10,12 @@ This endpoint creates a Docs object depending on whether an existing user is ava
 
 - The Create Docs request object **must** contain the following:
 
+This is a **simple paragraph**. It uses passive voice.
+
+In order to make things work, we just need to utilise the API.
+
+This sentence could be clearer.
+
 ### Query Parameters - Required\*
 
 - `Docs-Entity-ID` - the unique identifier of the third party entity
