@@ -1,0 +1,3 @@
+extends: existence
+message: "Prefer clear, concise language."
+level: warning

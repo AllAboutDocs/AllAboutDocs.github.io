@@ -1,0 +1,29 @@
+name: Vale Lint
+
+on:
+  push:
+    paths:
+      - "_documentation/**/*.md"
+      - "_docs_creation_APIs/**/*.md"
+  pull_request:
+    paths:
+      - "_documentation/**/*.md"
+      - "_docs_creation_APIs/**/*.md"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Vale
+        uses: errata-ai/vale-action@reviewdog
+        with:
+          version: latest
+
+      - name: Run Vale
+        uses: errata-ai/vale-action@reviewdog
+        with:
+          files: .
+          reporter: github-pr-review
+          fail_on_error: false # warnings only

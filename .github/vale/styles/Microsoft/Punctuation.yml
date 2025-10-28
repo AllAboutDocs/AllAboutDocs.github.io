@@ -1,0 +1,7 @@
+extends: existence
+message: "Avoid multiple consecutive punctuation marks."
+level: warning
+tokens:
+  - '\.{2,}' # multiple periods
+  - '\?{2,}' # multiple question marks
+  - "!{2,}" # multiple exclamation marks

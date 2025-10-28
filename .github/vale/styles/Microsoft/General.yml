@@ -1,0 +1,12 @@
+extends: existence
+message: "Avoid filler or weak phrases."
+level: warning
+ignorecase: true
+tokens:
+  - "in order to"
+  - "as well as"
+  - "for example"
+  - "in other words"
+  - "basically"
+  - "simply"
+  - "just"
