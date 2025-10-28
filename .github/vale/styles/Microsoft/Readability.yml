@@ -1,3 +1,0 @@
-extends: existence
-message: "Check readability and simplicity."
-level: warning

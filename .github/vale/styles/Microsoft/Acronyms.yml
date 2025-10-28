@@ -1,9 +1,0 @@
-extends: substitution
-message: "Spell out acronyms on first use: '%s' ➝ '%s'."
-level: warning
-ignorecase: true
-swap:
-  api: API
-  url: URL
-  http: HTTP
-  html: HTML

@@ -1,3 +1,0 @@
-extends: existence
-message: "Avoid passive voice."
-level: warning

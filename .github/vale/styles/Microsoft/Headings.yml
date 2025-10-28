@@ -1,5 +1,0 @@
-extends: capitalization
-message: "Use sentence-style capitalization in headings."
-level: warning
-scope: heading
-match: sentence

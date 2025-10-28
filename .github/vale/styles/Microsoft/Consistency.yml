@@ -1,3 +1,0 @@
-extends: existence
-message: "Ensure consistent terminology."
-level: warning
