@@ -23,5 +23,5 @@ jobs:
         uses: errata-ai/vale-action@reviewdog
         with:
           files: .
-          reporter: github-pr-review
+          reporter: github-check
           fail_on_error: false # warnings only
