@@ -1,0 +1,10 @@
+extends: substitution
+message: "Use Microsoft-approved terminology: '%s' ➝ '%s'."
+level: warning
+ignorecase: true
+swap:
+utilise: use
+begin: start
+prior to: before
+terminate: stop
+functionality: feature
